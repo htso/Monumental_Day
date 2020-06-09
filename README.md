@@ -50,12 +50,34 @@ People in the investment committee should be familiar with the fact that it take
 where `r` is the percent of advance and `d` the percent of decline, a negative fraction. We want the second rolling window to be at least `r` given `d`.
 
 ### Search Results
-Excluding overlaps, there is a total of 17 periods where NDX dropped more than 20% in a 23-day window. And for these 17 instants, only two completely recovered in the next 53 days,
+Excluding overlaps, there is a total of 17 periods where NDX dropped more than 20% in a 23-day window. 
+
+|    date    |  Forward Ret |  Backward Ret | Breakeven Ret |
+| -----------|--------------|---------------|---------------|  
+| 1987-11-17 | 0.10726108 | -0.2166572 | 0.2765802 |
+| 1990-08-23 | 0.01102104 | -0.2127735 | 0.2702824 |
+| 2000-04-14 | 0.14272937 | -0.2232561 | 0.2874256 |
+| 2000-04-27 | 0.05647829 | -0.2151367 | 0.2741072 |
+| 2000-05-10 | 0.19128245 | -0.2439223 | 0.3226154 | 
+| 2000-11-22 | -0.11714797 | -0.2202659 | 0.2824885 |
+| 2000-12-04 | -0.17980340 |-0.2080043 | 0.2626332 |
+| 2000-12-21 | -0.18510097 |-0.2032545 | 0.2551059 |
+| 2001-01-08 | -0.25268898 |-0.2002650 | 0.2504142|
+| 2001-03-21 | 0.19866170 |-0.2745615 | 0.3784765|
+| 2001-04-09 | 0.16624810 |-0.2357558 |0.3084822|
+| 2001-09-07 | 0.18873635 |-0.2016659 |0.2526084|
+| 2001-10-03 | 0.31289162 |-0.2083974 |0.2632602|
+| 2002-06-25 | -0.08849758 |-0.2051882 |0.2581595|
+| 2002-07-02 | -0.05726085 |-0.2024927 |0.2539070|
+| 2008-09-29 | -0.21100161 |-0.2126770 |0.2701267|
+| 2008-10-28 | -0.07315207 |-0.2239600 |0.2885934|
+
+And for these 17 instances, only two completely recovered in the next 53 days,
 
 2001-09-20
 2020-03-23
 
-The first period is plotted below,
+The first period occurred during the do-com bubble and is plotted below,
 
 ![Fig2](plots/NDX_sep2001.png)
 
