@@ -3,19 +3,23 @@
 
 ### Introduction
 
-Today is a monumental day in the history of stock market. The Nasdaq 100 index, which represents some of the biggest and best known companies in the world, has just completed a round trip. Starting from a record high on Feb 20, it crashed 28% into a bear market, troughed on Mar 19, and rose all the way back to a new record high today. All that happened in 76 days. That's just a little longer than one quarter, and crossed over the reporting period of a typical money manager. 
+Today is a monumental day in the history of stock market. The Nasdaq 100 index, which represents some of the biggest companies in the world, has just completed a round trip. Starting from a record high on Feb 20, it crashed 28% into a bear market, troughed on Mar 19, and rose all the way back to a new record high today. All that happened in 76 days. That's just a little longer than one quarter, and crossed over the reporting period of a typical money manager. With the economy in the dump and corporate earnings disappearing, how could this happen?
 
 ![Fig1](plots/NDX_jun2020.png)
 
-A month ago we saw a chorus of bears calling for an imminent drop in the market. They showed a degree of conviction rarely seen in the investment advisory business. One headline reads "_The Crash Has Only Just Begun_(Apr 28)"[1]. Another told investors "_How To Trade a Second Coronavirus Stock Market Crash_(May 5)"[2]. And their reasons are well articulated -- "_4 Reasons Why The Market Will Dive Again_(May 4)"[3]. My favorite is "_Continued Selling For Next Week, More Losses Set_(May 1)"[4] where the author committed the mortal sin of predicting both the direction and the timing.
+Let's not worry about fundamentals for a moment and focus on one "technical" aspect : the fundamental law of bear market progression. [For a fundamental analysis, I refer the reader to the piece I wrote during the darkest days of market selloff in March. ]
 
-The reasoning of these calls varied from fundamentals ("the market is the most expensive since 19XX") to technical ("we've hit the 6X% Fibonacci retracement"). But underlying their arguments is one central belief that a bear market obeys some fundamental law of progression. It starts with a sharp decline of more than 20%, to be followed by an equally sharp rebound, then drifts lower until the previous low is "retested". It is only after this "retesting" phase fully played out that one could confidently step in to buy. 
+A month ago there was a chorus of bears calling for the market to fall; they were made with a degree of conviction rarely seen in the investment advisory business. One headline reads "_The Crash Has Only Just Begun_(Apr 28)"[1]. Another told investors "_How To Trade a Second Coronavirus Stock Market Crash_(May 5)"[2]. And their reasons are well articulated -- "_4 Reasons Why The Market Will Dive Again_(May 4)"[3]. 
+
+All of these pieces relied on one central belief that a bear market must have three phases. It starts with a sharp decline of more than 20%, to be followed by an equally sharp rebound, then drifts lower until the previous low is "retested". It is only after this "retesting" phase fully played out could a bear market end. Up till now we definitely do not have this last part.
+
+So, is this truly unprecedented? 
 
 ### No Historic Precedent
 
-So, did this happen before? Let's look at the data. I coded a R script that searches for similar pattern in historic data. I ran it on all the major market indices available to me[2], which include 92 years of S&P 500 index since 1927, 49 years of Nasdaq Composite, the history of the British market, the German market, and 10 other stock markets around the world. 
+Let's look at the data. I coded a R script that searches for similar pattern in historic data. I ran it on all the major market indices available to me[2], which include 92 years of S&P 500 index since 1927, 49 years of Nasdaq Composite, the history of the British market, the German market, and 10 other stock markets around the world. 
 
-Finding : Nothing like this has happened before. No precedent of a drop and then a complete recovery inside a quarter. There has been some highly volatile trajectories in Nasdaq. The closest ever to a round trip was the path in second half of 2001, during Internet Bubble. This' by no mean exhaustive of history, but it's enough to show that what just happened is quite unusual. I'll discuss some coding detail in the last section.
+Finding : Nothing like this has happened before. No previous example of a drop and then a complete recovery inside four months. There has been some highly volatile trajectories in Nasdaq. The closest ever to a round trip was the path in second half of 2001, during Dot-com Bubble. I'll discuss some coding detail in the last section.
 
 ### How is it possible?
 
