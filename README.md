@@ -27,21 +27,38 @@ This coronavirus pandemic has created some highly visible damage to the economy.
 
 As human we have this cognitive mechanism that responds to visible stimulus by taking action. With convenient access to brokerage account, it's so easy to sell everything. One push of a button and you are all in cash and you feel safe. 
 
-So, my first hypothesis is that __behavorial bias__ played a role. Many long term investors might have sold into the decline in the March. As economic data continue to show the enormous damage in the real economy, few of them have moved back into stocks. The market is going up to make sure these people would buy back at some point, at higher prices. 
+So, my first hypothesis is that __behavorial bias__ played a role. Many long term investors might have sold into the decline in the March. As economic data continue to show the enormous damage in the real economy, few of them have moved back into stocks. The market is going up to make sure these people would buy back at some point, at higher prices. I'll write more about this in a separate blog.
 
-The second hypothesis is about the changing mix of stock market participants. It is well documented that as much as 90% of the volume in a typical day is from __HFT algorithms__ taking advantge of some nanosecond price movements. These algorithms don't know and don't care about long term price patterns based on century-old theory of market cycle. An index level such as the 61.8% Fibonacci retracement has no significance to these machine learning models because they are trained on level-agnostic return data. Very few machine learning models could learn directly from level data.  And that has to do with the fact that stock prices are inherently nonstationary and are therefore difficult to learn. I'll write more about this very interesting aspect in a separate piece.
+The second hypothesis is about the changing mix of stock market participants. It is well documented that as much as 90% of the volume in a typical day is from __HFT algorithms__ taking advantge of some nanosecond price movements. These algorithms don't know and don't care about long term price patterns based on century-old theory of market cycle. An index level such as the 61.8% Fibonacci retracement has no significance to these machine learning models because they are trained on level-agnostic data (ie. returns). Very few machine learning models could learn directly from level data.  And that has to do with the fact that stock prices are inherently nonstationary and are therefore difficult to learn. I'll write more about this very interesting aspect in a separate piece.
 
-However, level data could be useful, but just that one needs a large amount of level data to make a model capable enough to generate long term prediction. And that brings me to my third observation : the belief about how a bear market should behave has __very little statistically support__. And that is because we have very few data points available to evaluate any hypothesis of the sort akin to the Dow theory. Over the last one hundred years, there were just six bear markets ever occurred in the US, and less than 20 over the developed world[5]. Many of the bear markets lasted a very short time, such as the stock market crash in 1987. And some of them are double-counted. Any model built from 10 or 20 data points would have little statistical signficance and a large margin of error. 
+However, level data could be useful, but just one needs a large amount of level data to make a model capable enough to generate long term prediction. And that brings me to my third observation : the belief about how a bear market should behave has __very little statistically support__. That's because we have very few data points available to evaluate any hypothesis concerning the progression of a bear market, such as the Dow theory. 
+
+Over the past one hundred years, there were just six bear markets ever occurred in the US, and less than 20 in the developed world[5]. Many of these bear markets lasted a very short time, such as the 1987 stock market crash. And some of them are double-counted. Any model built from 10 or 20 data points have little statistical signficance and a large margin of error. 
 
 Therefore, there is nothing in the data that dictates a third leg in a bear market as believed by many technicians. A bear market that ends with a sharp rally from a single low is as likely as it is not.
 
 
 ### Pattern Search Algorithm
+We want to find periods where a descend of more than 20% (that's definition of a bear market) is followed by an advance equal to the initial drop. I use rolling windows of fixed width. The first has duration of 23 days; that's the leg from Feb 19 to Mar 20. The second has 53 days, from Mar 21 to Jun 5. 
 
+People in the investment committee should be familiar with the fact that it takes a bigger percentage to climb back to breakeven. For example, if a stock drops 10%, it needs to go up 11.1% to recover the lost ground. The formula is,
+
+![breakeven_formual](Img/breakeven_formula.png)
+
+where `r` is the percent of advance and `d` the percent of decline, a negative fraction. We want the second rolling window to be at least `r` given `d`.
+
+### Search Results
+Excluding overlaps, there is a total of 17 periods where NDX dropped more than 20% in a 23-day window. And for these 17 instants, only two completely recovered in the next 53 days,
+
+2001-09-20, 2020-03-23
+
+The first period is plotted below,
+
+![Fig2](plots/NDX_sep2001.png)
 
  
 ### Data Sources
-Yahoo finance.  
+[Yahoo finance](https://finance.yahoo.com/)
 
 ### Install Software
 To install R, press Ctrl+Alt+T to open a terminal

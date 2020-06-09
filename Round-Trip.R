@@ -6,18 +6,20 @@ library(goodies)
 library(quantmod)
 
 home = "/mnt/WanChai/Dropbox/GITHUB_REPO/Monumental_Day"
+data_dir = "/data/"
+plot_dir = "/plots/"
 setwd(home)
 source(paste(home, "/utils/fun.R", sep=""))
 
-ff = "YF_stock_indices.RData"
+full_path = paste( home, data_dir, "YF_stock_indices.RData",sep="")
 stock_mkt_indices = c("GSPC", "NDX", "RUT", "FTSE", "GDAXI", "FCHI", "N225", "HSI", "STI", 
                       "AORD", "JKSE", "KS11", "TWII", "BVSP", "MXX")
 
-if (file.exists(ff)) {
-  load(ff)  
+if (file.exists(full_path)) {
+  load(full_path)  
 } else {
   getYF(stock_mkt_indices)   
-  save.image("YF_stock_indices.RData")
+  save.image(full_path)
 }
 
 x = NDX
@@ -64,9 +66,18 @@ backw[,"date"] = as.Date(row.names(backw))
 colnames(backw)[1] = "Backw"
 df = na.omit(merge(forw, backw, by="date", all=TRUE))
 df1 = df[which(df[,"Backw"] < -0.2),]
+
+# How many rolling windows of more than 20% decline?
+# Many are overlapped, so exclude those that are less than one week apart
+sum(as.integer(diff(df1[,"date"])) > 5)
+# 17
+
+# How many have completely recovered loss in the forward window
 df1[,"r"] = sapply(df1[,"Backw"], recov)
 ix = which(df1[,"Forw"] > df1[,"r"])
 df1[ix,]
+# Two : 2001-09-20, 2020-03-17
+
 
 # :::: VIZ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 png("NDX_jun2020.png", width=640, height=480)
