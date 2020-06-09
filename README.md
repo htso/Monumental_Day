@@ -43,14 +43,15 @@ We want to find periods where a descend of more than 20% (that's definition of a
 
 People in the investment committee should be familiar with the fact that it takes a bigger percentage to climb back to breakeven. For example, if a stock drops 10%, it needs to go up 11.1% to recover the lost ground. The formula is,
 
-![breakeven_formual](Img/breakeven_formula.png)
+![breakeven_formual](Img/breakeven_formula.gif)
 
 where `r` is the percent of advance and `d` the percent of decline, a negative fraction. We want the second rolling window to be at least `r` given `d`.
 
 ### Search Results
 Excluding overlaps, there is a total of 17 periods where NDX dropped more than 20% in a 23-day window. And for these 17 instants, only two completely recovered in the next 53 days,
 
-2001-09-20, 2020-03-23
+2001-09-20
+2020-03-23
 
 The first period is plotted below,
 
