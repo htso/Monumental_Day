@@ -1,8 +1,6 @@
 # A Monumental Day in the Stock Market
 ## -- Jun 5, 2020
 
-### Introduction
-
 Today is a monumental day in the history of stock market. The Nasdaq 100 index, which represents some of the biggest companies in the world, has just completed a round trip. Starting from a record high on Feb 20, it crashed 28% into a bear market, troughed on Mar 19, and rose all the way back to a new record high today. All that happened in 76 days. That's just a little longer than one quarter, and crossed over the reporting period of a typical money manager. With the economy in the dump and corporate earnings disappearing, how could this happen?
 
 ![Fig1](plots/NDX_jun2020.png)
