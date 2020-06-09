@@ -9,15 +9,15 @@ Today is a monumental day in the history of stock market. The Nasdaq 100 index, 
 
 Let's not worry about fundamentals for a moment[1] and focus on one "technical" aspect : the fundamental law of bear market progression.
 
-A month ago there was a chorus of bears calling for the market to fall; they were made with a degree of conviction rarely seen in the investment advisory business. One headline reads "_The Crash Has Only Just Begun_(Apr 28)"[1]. Another told investors "_How To Trade a Second Coronavirus Stock Market Crash_(May 5)"[2]. And their reasons are well articulated -- "_4 Reasons Why The Market Will Dive Again_(May 4)"[3]. 
+A month ago there was a chorus of bears calling for the market to fall; they were made with a degree of conviction rarely seen in the investment advisory business. One headline reads "_The Crash Has Only Just Begun_(Apr 28)"[2]. Another told investors "_How To Trade a Second Coronavirus Stock Market Crash_(May 5)"[3]. And their reasons are well articulated -- "_4 Reasons Why The Market Will Dive Again_(May 4)"[4]. 
 
 All of these pieces relied on one central belief that a bear market must have three phases. It starts with a sharp decline of more than 20%, to be followed by an equally sharp rebound, then drifts lower until the previous low is "retested". It is only after this "retesting" phase fully played out could a bear market end. Up till now we definitely do not have the last part.
 
-So, is this truly unprecedented? 
+So, is this really unprecedented? 
 
 ### No Historic Precedent
 
-Let's look at the data. I coded a R script that searches for similar pattern in historic data. I ran it on all the major market indices available on yahoo finance[2], including 92 years of S&P 500 index since 1927, 49 years of Nasdaq Composite, the history of the British market, the German market, and 10 other stock markets around the world. 
+Let's look at the data. I coded a R script that searches for similar pattern in historic data. I ran it on the major market indices available on [yahoo finance](https://finance.yahoo.com/), including the amazing 92 years of S&P 500 since 1927, 49 years of Nasdaq Composite, the history of the British market, the German market, and 10 other stock markets around the world [5]. 
 
 Finding : Nothing like this has happened before. No previous example of a drop and then a complete recovery inside four months. There has been some highly volatile trajectories in Nasdaq. The closest ever to a round trip was the path in second half of 2001, during Dot-com Bubble. I'll discuss some coding detail in the last section.
 
@@ -76,7 +76,9 @@ References
 
 [4] https://seekingalpha.com/article/4342157-continued-selling-for-next-week-losses-set-next
 
-[5] https://en.wikipedia.org/wiki/List_of_stock_market_crashes_and_bear_markets
+[5] The `quantmod` package in R is amazing; it has the capability to pull large amount of historic time series with one function call. In R command line, type `?getSymbols`.
+
+[6] https://en.wikipedia.org/wiki/List_of_stock_market_crashes_and_bear_markets
 
 
 
