@@ -1,4 +1,5 @@
 # A Monumental Day in the Stock Market
+# Jun 5, 2020
 
 ### Introduction
 
@@ -6,7 +7,7 @@ Today is a monumental day in the history of stock market. The Nasdaq 100 index, 
 
 ![Fig1](plots/NDX_jun2020.png)
 
-A month ago we saw a chorus of bearish calls with unambiguous predictions; many saw an imminent drop in the S&P. These predictions showed a degree of conviction rarely seen in the investment advisory business. One headline reads "The Crash Has Only Just Begun (Apr 28)"[1]. Another told investors "How To Trade a Second Coronavirus Stock Market Crash (May 5)"[2]. And their reasons are well articulated -- "4 Reasons Why The Market Will Dive Again (May 4)"[3]. My favorite is "Continued Selling For Next Week, More Losses Set (May 1)"[4] where the author committed the mortal sin of telling you both the direction and the timing.
+A month ago we saw a chorus of bears calling for an imminent drop in the market. They showed a degree of conviction rarely seen in the investment advisory business. One headline reads "__The Crash Has Only Just Begun__(Apr 28)"[1]. Another told investors "__How To Trade a Second Coronavirus Stock Market Crash__(May 5)"[2]. And their reasons are well articulated -- "__4 Reasons Why The Market Will Dive Again__(May 4)"[3]. My favorite is "__Continued Selling For Next Week, More Losses Set__(May 1)"[4] where the author committed the mortal sin of predicting both the direction and the timing.
 
 The reasoning of these calls varied from fundamentals ("the market is the most expensive since 19XX") to technical ("we've hit the 6X% Fibonacci retracement"). But underlying their arguments is one central belief that a bear market obeys some fundamental law of progression. It starts with a sharp decline of more than 20%, to be followed by an equally sharp rebound, then drifts lower until the previous low is "retested". It is only after this "retesting" phase fully played out that one could confidently step in to buy. 
 
