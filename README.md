@@ -7,7 +7,7 @@ Today is a monumental day in the history of stock market. The Nasdaq 100 index, 
 
 ![Fig1](plots/NDX_jun2020.png)
 
-Let's not worry about fundamentals for a moment and focus on one "technical" aspect : the fundamental law of bear market progression. [For a fundamental analysis, I refer the reader to the piece I wrote during the darkest days of market selloff in March. ]
+Let's not worry about fundamentals for a moment[1] and focus on one "technical" aspect : the fundamental law of bear market progression.
 
 A month ago there was a chorus of bears calling for the market to fall; they were made with a degree of conviction rarely seen in the investment advisory business. One headline reads "_The Crash Has Only Just Begun_(Apr 28)"[1]. Another told investors "_How To Trade a Second Coronavirus Stock Market Crash_(May 5)"[2]. And their reasons are well articulated -- "_4 Reasons Why The Market Will Dive Again_(May 4)"[3]. 
 
@@ -17,7 +17,7 @@ So, is this truly unprecedented?
 
 ### No Historic Precedent
 
-Let's look at the data. I coded a R script that searches for similar pattern in historic data. I ran it on all the major market indices available to me[2], which include 92 years of S&P 500 index since 1927, 49 years of Nasdaq Composite, the history of the British market, the German market, and 10 other stock markets around the world. 
+Let's look at the data. I coded a R script that searches for similar pattern in historic data. I ran it on all the major market indices available on yahoo finance[2], including 92 years of S&P 500 index since 1927, 49 years of Nasdaq Composite, the history of the British market, the German market, and 10 other stock markets around the world. 
 
 Finding : Nothing like this has happened before. No previous example of a drop and then a complete recovery inside four months. There has been some highly volatile trajectories in Nasdaq. The closest ever to a round trip was the path in second half of 2001, during Dot-com Bubble. I'll discuss some coding detail in the last section.
 
@@ -65,6 +65,8 @@ To ask questions or report issues, please open an issue on the [issues tracker](
 
 
 References
+
+[1] For a fundamental perspective, I refer the reader to the [piece](https://github.com/htso/bear_market) I wrote during the darkest days of the March selloff.
 
 [1] https://seekingalpha.com/article/4340437-crash-only-just-begun
 
