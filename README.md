@@ -38,7 +38,6 @@ However, I do not dismiss the usefulness of level data. With enough level data, 
 Therefore, as we're witnessing at the moment, a bear market does not need a third leg down to retest the previous low. Any stretegy relying on such a pattern would suffer enormous variance.
 
 
-
 ### Pattern Search Algorithm
 
 
