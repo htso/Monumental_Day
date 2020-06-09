@@ -35,7 +35,7 @@ The second hypothesis is about the changing mix of stock market participants. It
 
 However, I do not dismiss the usefulness of level data. With enough level data, a good model could be trained to make long term prediction. And that brings me to my third observation : the belief about how a bear market should behave has very little statistically support. And that is because we have very few data points available to evaluate any hypothesis of the sort akin to the Dow theory. Over the last one hundred years, there were just six bear markets ever occurred in the US, and less than 20 over the developed world[5]. Many of the bear markets lasted a very short time, such as the stock market crash in 1987. And some of them are double-counts. Any model built from 10 or 20 data points would have little statistical signficance and a large margin of error. 
 
-Therefore, as we're witnessing at the moment, a bear market does not need a third leg down to retest the previous low. Any stretegy relying on such a pattern would suffer enormous variance.
+Therefore, there is nothing in the data that dictates a third leg in a bear market as believed by many technicians. A bear market that ends with a sharp rally from a single low is as likely as it is not.
 
 
 ### Pattern Search Algorithm
