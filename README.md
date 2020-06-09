@@ -1,5 +1,5 @@
 # A Monumental Day in the Stock Market
-# Jun 5, 2020
+## -- Jun 5, 2020
 
 ### Introduction
 
